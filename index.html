@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <style>
-
-    *{
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
-    }
+      }
 
-
-    /* .clase1{
+      /* .clase1{
         background-color: crimson;
         color: wheat;
       
         } */
 
-        .ingreso{
+      .ingreso {
         background-color: rgb(74, 172, 204);
         display: flex;
-    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: white;
-        margin-left: 1rem;
-    }
+      }
 
-    .resultados{
+      .resultados {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: crimson;
         flex-wrap: wrap;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
+        background-color: rgb(224, 61, 93);
         gap: 1rem;
-    }
+      }
 
-    .resultado{
+      .resul {
+      }
+
+      .resultado {
         /* background-color: salmon; */
         color: wheat;
-    }
-    
+      }
+
+      h2 {
+        font-size: 1rem;
+        margin: 1rem;
+        color: antiquewhite;
+        text-align: center;
+      }
+
+      .resultados button {
+        padding: 0.5rem 1rem;
+        background-color: #ffffff;
+        color: rgb(224, 61, 93);
+        border: 2px solid rgb(224, 61, 93);
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1rem;
+      }
     </style>
-    
 
     <!--Ingreso de numeros-->
 
+    
     <div class="ingreso">
-    <h1 id="num1"></h1>
-    <h1 id="num2"></h1>
-</div>
+      <h2 id="num1"></h2>
+      <h2 id="num2"></h2>
+    </div>
 
-    <!--Resultados obtenidos-->
-<div class="resultados">
+    <div class="resultados"><h2>Resultados</h2></div>
 
-<div class="resultado"> <h2 id="resultado_suma"> </h2></div> 
-<div class="resultado"><h2 id="resultado_resta"> </h2></div>
-<div class="resultado"><h2 id="resultado_mul"> </h2></div>
-<div class="resultado"><h2 id="resultado_div"> </h2></div>
+    <div class="resultados" id="resultado">
+      <div class="resultado"><h2 id="resultado_suma"></h2></div>
+      <div class="resultado"><h2 id="resultado_resta"></h2></div>
+      <div class="resultado"><h2 id="resultado_mul"></h2></div>
+      <div class="resultado"><h2 id="resultado_div"></h2></div>
 
-</div>
+      <!-- <button type="button" id="btn-ocultar">ocultar</button> -->
+    </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
