@@ -10,12 +10,13 @@ const resultado_division = document.getElementById("resultado_div");
 const resultado = document.getElementById("resultado");
 
 calcular.addEventListener("click", function() {
+    // guardar los valores de los inputs y convertirlos a numero
   const numero1 = Number(document.getElementById("num1").value);
   const numero2 = Number(document.getElementById("num2").value);
 
   // Verificar si los inputs son válidossc
 
-  if (isNaN(numero1) || isNaN(numero2)) {
+  if (isNaN(numero1) || isNaN(numero2))  {
     alert("Ingresa solo numeros");
     return;
   }
